@@ -7,7 +7,7 @@ module "tfconfig-functions" {
 }
 
 policy "restrict-resources-by-module-source"{
-  enforcement_level = "soft-mandatory"
+  enforcement_level = "hard-mandatory"
 }
 
 policy "restrict-s3-acl" {
