@@ -1,4 +1,4 @@
-variable "s3_bucket_acl" {
+variable "acl" {
   description = "S3 Bucket ACL"
   type        = string
   default = "private"
