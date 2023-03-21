@@ -3,7 +3,7 @@ module "tfplan-functions" {
 }
 
 module "tfconfig-functions" {
-    source = "./common-functions/tfconfig-functions/tfconfig-functions.sentinel"
+    source = "./common-functions/tfconfig-functions.sentinel"
 }
 
 policy "restrict-resources-by-module-source"{
