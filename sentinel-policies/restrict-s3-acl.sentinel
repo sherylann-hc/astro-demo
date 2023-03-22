@@ -28,7 +28,7 @@ for allS3Buckets as address, S3Buckets {
 
 	# Filter S3 buckets that do not have private ACL attribute (legacy syntax)
 	# Warnings will be printed for all violations since the last parameter is true
-	nonPrivateS3Buckets = []
+	nonPrivateS3Buckets = {}
 	if legacy is true {
 		nonPrivateS3Buckets = plan.filter_attribute_is_not_value(allS3Buckets, "acl", "private", true)
 		# Mailn rule - Checks if any legacy S3 buckets have ACL not set to private.
