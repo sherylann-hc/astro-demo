@@ -11,6 +11,7 @@ import "strings"
 # Get all S3 buckets resources
 allS3BucketsACL = config.find_resources_by_type("aws_s3_bucket_acl")
 allS3Buckets = plan.find_resources("aws_s3_bucket")
+nonPrivateS3Buckets = []
 
 #Variables to support check of legacy S3 syntax vs new Seperate S3 Resources being used
 legacy = false
